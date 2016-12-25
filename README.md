@@ -1,7 +1,7 @@
-# ajax-input-validation-library
-Ajax input field validation library v1.0__
-Creator : Ikram - Ud - Daula.__
-Software Engineer at Comit Solutions Limited.__
+## Ajax input validation library
+<h5>Ajax input field validation library v1.0</h5>
+<p>Created By : Ikram - Ud - Daula.</p>
+<p>Software Engineer at Comit Solutions Limited.</p>
 Github : https://github.com/ikramhasib007 
 
 Documentation:
