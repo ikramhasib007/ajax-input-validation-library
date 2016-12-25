@@ -23,30 +23,30 @@
  * Here is a sample of controller and model function by demonstration purpose.
  * Controller function:
  * public function get_sms($id = NULL) {
- if (!is_null($id)) {
- //$id not null
- $result = $this->notice_model->get_sms_info($id);
- echo json_encode($result);
- exit();
- } else {
- //$id null
- $result = $this->notice_model->get_sms_info();
- echo json_encode($result);
- exit();
- }
- return false;
+	 if (!is_null($id)) {
+		 //$id not null
+		 $result = $this->notice_model->get_sms_info($id);
+		 echo json_encode($result);
+		 exit();
+	 } else {
+		 //$id null
+		 $result = $this->notice_model->get_sms_info();
+		 echo json_encode($result);
+		 exit();
+	}
+	return false;
  }
  * 
  * Model function:
  * public function get_sms_info($id = NULL) {
- if (!is_null($id)) {
- //$id not null
- return $this->db->where("id", $id)->get("notice_sms")->row();
- } else {
- //$id null
- return $this->db->select("*")->from("notice_sms")->get()->result();
- }
- return false;
+	 if (!is_null($id)) {
+		 //$id not null
+		 return $this->db->where("id", $id)->get("notice_sms")->row();
+	 } else {
+		 //$id null
+		 return $this->db->select("*")->from("notice_sms")->get()->result();
+	 }
+	 return false;
  }
  * 
  * View: 
@@ -59,9 +59,9 @@
  * 
  * Here is a view page code:
  * <div class="form-group">
- <label class="control-label">Title <span class="text-danger">*</span></label>
- <input type="text" name="sms_title" id="sms_title" class="form-control" required="required" placeholder="SMS Title" oninput="_field_validate(<?php echo "'" . site_url("notice/get_sms") . "'"; ?>, 'sms_title')" >
- </div>
+	<label class="control-label">Title <span class="text-danger">*</span></label>
+		<input type="text" name="sms_title" id="sms_title" class="form-control" required="required" placeholder="SMS Title" oninput="_field_validate(<?php echo "'" . site_url("notice/get_sms") . "'"; ?>, 'sms_title')" >
+	</div>
  * 
  * when you submit the form. you check your entire form for id #alert-field.
  * If you found any id named alert-field then you could not submit the form.
@@ -137,7 +137,7 @@ function get_data(url, id, id2) {
  */
 
 function _field_validate(url, fieldId) {
-    //you can customize that chars if you want.
+    //you can customize that chars if you want. this demo data.
     var chars = /[^a-zA-Z 0-9_@(),.?!:%]/g;
     var elem = document.getElementById(fieldId);
     if (typeof elem !== 'undefined' && elem !== null) {
