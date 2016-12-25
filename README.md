@@ -7,6 +7,7 @@ Github : https://github.com/ikramhasib007
 Documentation:
 ---------------------------------------------
  * This is advanced programming code.
+ * This is customizable.
  * For styling here i use Bootstrap 3
  * Here i use Javascript, Ajax and Promise API.
  * No jQuery uses here.
