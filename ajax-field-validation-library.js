@@ -238,6 +238,18 @@ function remove_field_error_msg(fieldId) {
  * 
  * oninput="_field_validate(<?php echo "'" . site_url("notice/get_sms") . "'"; ?>, 'sms_title')"
  * 
+ * Then you submit your form by jQuery
+ * $("form#test-form").on("submit", function (e) {
+        e.preventDefault();
+        var alertfield = $("#sms_title").parent().find("#alert-field")[0];
+        if (alertfield) {
+            $("#sms_title").focus();
+            console.log(alertfield);
+        } else {
+            alert(" you can go now");
+        }
+    });
+ * 
  * 
  * That's all. thank you. 
  */
